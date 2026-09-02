@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Brew &amp; Bloom</title>
+<meta name="description" content="Get in touch with Brew & Bloom, reserve a table, or find us in Anna Nagar, Chennai.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="page-loader" aria-hidden="true">
+  <div class="loader-mark">Brew &amp; Bloom</div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header>
+  <nav class="navbar" aria-label="Primary">
+    <div class="container">
+      <a href="index.html" class="brand">Brew<span>&amp;</span>Bloom</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-kicker">Contact</span>
+      <h1>Let's Talk, Or Just Come By.</h1>
+      <p>Reservations, private events, feedback, or just to say hello — we read every message.</p>
+      <div class="page-hero-crumb"><a href="index.html">Home</a> / Contact</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-note reveal">
+          <span class="section-kicker">Reach Us</span>
+          <h3>Anna Nagar, Chennai</h3>
+          <div class="location-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Address</h4>
+              <p>123, Anna Nagar, Chennai, Tamil Nadu 600040</p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+914412345678">+91 44 1234 5678</a></p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:hello@brewandbloom.cafe">hello@brewandbloom.cafe</a></p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <h4>Hours</h4>
+              <p>Mon – Fri: 8 AM – 10 PM<br>Sat – Sun: 8 AM – 11:30 PM</p>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="tel:+914412345678" class="btn btn-primary btn-sm"><i class="fa-solid fa-phone"></i> Call Us</a>
+            <a href="https://wa.me/919876543210" class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+              <span class="field-error">Please enter your name.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required>
+              <span class="field-error">Please enter a valid phone number.</span>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            <span class="field-error">Please enter a valid email address.</span>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us how we can help — reservations, events, feedback..." required minlength="10"></textarea>
+            <span class="field-error">Please write at least 10 characters.</span>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+
+          <div class="form-success">
+            <i class="fa-solid fa-circle-check" style="font-size:1.4rem;"></i>
+            <div>
+              <strong>Message sent.</strong><br>
+              We'll get back to you within a day.
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="map-frame reveal" style="min-height: 320px;">
+        <i class="fa-solid fa-map-location-dot map-pin" aria-hidden="true"></i>
+        <div class="map-caption">Map preview — 123, Anna Nagar, Chennai. Open in Google Maps for live directions.</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Brew<span>&amp;</span>Bloom</a>
+        <p class="footer-tagline">"Where Every Cup Has A Story."</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon – Fri: 8 AM – 10 PM</li>
+          <li>Sat – Sun: 8 AM – 11:30 PM</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <ul>
+          <li>123, Anna Nagar</li>
+          <li>Chennai, Tamil Nadu</li>
+          <li><a href="contact.html">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Brew &amp; Bloom. All rights reserved.</span>
+      <span>Crafted with care in Chennai.</span>
+    </div>
+  </div>
+</footer>
+
+
+<div class="toast-stack"></div>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>

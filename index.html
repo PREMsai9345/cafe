@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew &amp; Bloom — Where Every Cup Has a Story</title>
+<meta name="description" content="Brew & Bloom is a specialty coffee house and creative workspace in Anna Nagar, Chennai — slow mornings, bold espresso, and handcrafted plates.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Loader -->
+<div class="page-loader" aria-hidden="true">
+  <div class="loader-mark">Brew &amp; Bloom</div>
+  <div class="loader-bar"></div>
+</div>
+
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar" aria-label="Primary">
+    <div class="container">
+      <a href="index.html" class="brand">Brew<span>&amp;</span>Bloom</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="menu.html">Our Menu</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80" alt="Barista pouring latte art into a ceramic cup at Brew & Bloom">
+    </div>
+    <div class="hero-scrim"></div>
+    <div class="hero-beans" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <div class="container">
+        <span class="hero-eyebrow">Anna Nagar, Chennai</span>
+        <h1 class="hero-title">
+          <span class="reveal-line"><span>Coffee, Crafted</span></span>
+          <span class="reveal-line"><span>Like Art.</span></span>
+        </h1>
+        <p class="hero-sub">Slow mornings, bold espresso, handcrafted plates and conversations worth staying for.</p>
+        <div class="hero-actions">
+          <a href="menu.html" class="btn btn-gold">Explore Menu</a>
+          <a href="contact.html" class="btn btn-ghost-light">Reserve a Table</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <span class="hero-scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- Featured Menu -->
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">The Menu</span>
+        <h2>A short list, made with intent.</h2>
+        <p>We keep the counter small so every cup and plate gets full attention. Here are a few of the house favourites — the full menu is next door.</p>
+      </div>
+
+      <div class="menu-filters reveal">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="coffee">Coffee</button>
+        <button class="filter-btn" data-filter="breakfast">Breakfast</button>
+        <button class="filter-btn" data-filter="drinks">Signature Drinks</button>
+        <button class="filter-btn" data-filter="desserts">Desserts</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <article class="menu-card reveal" data-category="coffee" data-id="espresso" data-name="Espresso" data-price="120" data-img="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?auto=format&fit=crop&w=800&q=80" alt="A double shot of espresso in a small white cup">
+            <span class="menu-card-tag">Coffee</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Espresso</h3>
+              <span class="menu-card-price">₹120</span>
+            </div>
+            <p>A tight, syrupy double shot pulled from our house single-origin blend.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-1" data-category="drinks" data-id="caramel-cloud-latte" data-name="Caramel Cloud Latte" data-price="220" data-img="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1461988320302-91bde64fc8e4?auto=format&fit=crop&w=800&q=80" alt="Caramel latte with a cloud of foam and latte art">
+            <span class="menu-card-tag">Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Caramel Cloud Latte</h3>
+              <span class="menu-card-price">₹220</span>
+            </div>
+            <p>Espresso, steamed milk, and a whipped caramel foam that holds its shape.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-2" data-category="coffee" data-id="cold-brew" data-name="Cold Brew" data-price="180" data-img="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Glass of cold brew coffee over ice">
+            <span class="menu-card-tag">Coffee</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Cold Brew</h3>
+              <span class="menu-card-price">₹180</span>
+            </div>
+            <p>Steeped for eighteen hours, poured over a slow-melting ice block.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-category="breakfast" data-id="avocado-toast" data-name="Avocado Toast" data-price="280" data-img="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?auto=format&fit=crop&w=800&q=80" alt="Avocado toast with seeds on sourdough bread">
+            <span class="menu-card-tag">Breakfast</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Avocado Toast</h3>
+              <span class="menu-card-price">₹280</span>
+            </div>
+            <p>Sourdough, smashed avocado, chilli oil, and a soft-boiled egg on request.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-1" data-category="breakfast" data-id="truffle-croissant" data-name="Truffle Croissant" data-price="260" data-img="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=80" alt="Flaky croissant filled with truffle and cheese">
+            <span class="menu-card-tag">Breakfast</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Truffle Croissant</h3>
+              <span class="menu-card-price">₹260</span>
+            </div>
+            <p>Butter-laminated pastry baked daily, filled with truffle and Gruyère.</p>
+          </div>
+        </article>
+
+        <article class="menu-card reveal reveal-delay-2" data-category="desserts" data-id="tiramisu" data-name="Tiramisu" data-price="240" data-img="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80">
+          <div class="menu-card-media">
+            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80" alt="Slice of tiramisu dusted with cocoa">
+            <span class="menu-card-tag">Dessert</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-top">
+              <h3>Tiramisu</h3>
+              <span class="menu-card-price">₹240</span>
+            </div>
+            <p>Espresso-soaked ladyfingers layered with mascarpone, made fresh each morning.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="reveal" style="text-align:center; margin-top:56px;">
+        <a href="menu.html" class="btn btn-outline">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Experience -->
+  <section class="section section--dark" id="experience">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Beyond the Cup</span>
+        <h2>More Than A Cafe.</h2>
+        <p>Brew &amp; Bloom is built for the whole day — coffee in the morning, deep work by noon, live music after dark.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card reveal">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=700&q=80" alt="Roasted coffee beans in a wooden scoop">
+          <div class="experience-card-label">
+            <span class="icon">☕</span>
+            <h3>Specialty Coffee</h3>
+            <p>Single-origin beans, roasted in small batches and dialled in daily by our baristas.</p>
+          </div>
+        </div>
+        <div class="experience-card reveal reveal-delay-1">
+          <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=700&q=80" alt="Vinyl record playing on a turntable">
+          <div class="experience-card-label">
+            <span class="icon">🎵</span>
+            <h3>Vinyl Evenings</h3>
+            <p>Every Friday, the espresso machine quiets down and the record player takes over.</p>
+          </div>
+        </div>
+        <div class="experience-card reveal reveal-delay-2">
+          <img src="https://images.unsplash.com/photo-1517705008128-361805f42e86?auto=format&fit=crop&w=700&q=80" alt="Laptop and coffee cup on a wooden table by a window">
+          <div class="experience-card-label">
+            <span class="icon">💻</span>
+            <h3>Creative Workspace</h3>
+            <p>Fast wifi, real plug points, and tables built for a whole morning of work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-media reveal">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80" alt="Interior of Brew & Bloom cafe with wooden furniture and warm light">
+          <img class="story-img-float" src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Close-up of hands holding a warm coffee cup">
+        </div>
+        <div class="story-text reveal reveal-delay-1">
+          <span class="section-kicker">Our Story</span>
+          <h2>Born From A Love For Slow Mornings.</h2>
+          <p>Brew &amp; Bloom started in 2019 as a single roasting bench in a rented garage, when three friends — a florist, a barista, and an architect — got tired of coffee that was fast but forgettable.</p>
+          <p>They wanted a room where you could hear the grinder over conversation, where the light changed the way it does in a home, and where a flower on the table wasn't decoration but part of the point. The first cafe opened on a quiet stretch of Anna Nagar with twelve chairs and one espresso machine.</p>
+          <p>Today the roastery has grown, but the rule hasn't changed: every cup should feel like it was made for the person drinking it, not for a queue.</p>
+          <div class="story-sign">— The Brew &amp; Bloom family</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--dark" id="reviews">
+    <div class="container">
+      <div class="testimonial-slider reveal">
+        <div class="testimonial-slide is-active">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testimonial-quote">Best coffee experience I've had in Chennai. The Caramel Cloud Latte alone is worth the drive.</p>
+          <div class="testimonial-author">Arjun Menon</div>
+          <div class="testimonial-role">Regular since 2021</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p class="testimonial-quote">Beautiful space, incredible coffee and amazing desserts. My laptop and I have a permanent table here.</p>
+          <div class="testimonial-author">Priya Raghavan</div>
+          <div class="testimonial-role">Freelance designer</div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+          <p class="testimonial-quote">Vinyl evenings on Friday are the best-kept secret in Anna Nagar. Go early, the good chairs fill up fast.</p>
+          <div class="testimonial-author">Karthik Subramaniam</div>
+          <div class="testimonial-role">Local musician</div>
+        </div>
+        <div class="testimonial-dots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section--tight section" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <div class="stat-number" data-target="10" data-suffix="K+">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat-number" data-target="25" data-suffix="+">0</div>
+          <div class="stat-label">Signature Drinks</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat-number" data-target="4.9" data-suffix="/5">0</div>
+          <div class="stat-label">Customer Rating</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat-number" data-target="7" data-suffix=" Days">0</div>
+          <div class="stat-label">Open Every Week</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section class="section" id="location">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-kicker">Find Us</span>
+        <h2>Visit Brew &amp; Bloom</h2>
+      </div>
+      <div class="location-wrap">
+        <div class="location-info reveal">
+          <div class="location-detail">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <h4>Address</h4>
+              <p>123, Anna Nagar, Chennai, Tamil Nadu 600040</p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <h4>Monday – Friday</h4>
+              <p>8:00 AM – 10:00 PM</p>
+            </div>
+          </div>
+          <div class="location-detail">
+            <i class="fa-regular fa-clock"></i>
+            <div>
+              <h4>Saturday – Sunday</h4>
+              <p>8:00 AM – 11:30 PM</p>
+            </div>
+          </div>
+          <div class="location-actions">
+            <a href="tel:+914412345678" class="btn btn-primary btn-sm"><i class="fa-solid fa-phone"></i> Call Us</a>
+            <a href="https://wa.me/919876543210" class="btn btn-outline btn-sm" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="map-frame reveal reveal-delay-1">
+          <i class="fa-solid fa-map-location-dot map-pin" aria-hidden="true"></i>
+          <div class="map-caption">Map preview — 123, Anna Nagar, Chennai. Open in Google Maps for live directions.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">Brew<span>&amp;</span>Bloom</a>
+        <p class="footer-tagline">"Where Every Cup Has A Story."</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Our Menu</a></li>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon – Fri: 8 AM – 10 PM</li>
+          <li>Sat – Sun: 8 AM – 11:30 PM</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Location</h4>
+        <ul>
+          <li>123, Anna Nagar</li>
+          <li>Chennai, Tamil Nadu</li>
+          <li><a href="contact.html">Get Directions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Brew &amp; Bloom. All rights reserved.</span>
+      <span>Crafted with care in Chennai.</span>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Lightbox -->
+<div class="lightbox">
+  <button class="lightbox-close" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button>
+  <button class="lightbox-nav prev" aria-label="Previous image"><i class="fa-solid fa-chevron-left"></i></button>
+  <img src="" alt="">
+  <button class="lightbox-nav next" aria-label="Next image"><i class="fa-solid fa-chevron-right"></i></button>
+</div>
+
+<!-- Toasts -->
+<div class="toast-stack"></div>
+
+<!-- Back to top -->
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
